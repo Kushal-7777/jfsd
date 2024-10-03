@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #666;
+            padding: 15px 30px;
+            color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .header .logo img {
+            width: 120px;
+        }
+
+        .user-info {
+            font-size: 16px;
+            color: #fff;
+        }
+
+        .navigation {
+            background-color: #333;
+            padding: 15px;
+        }
+
+        .navigation ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+        }
+
+        .navigation a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        .navigation a:hover {
+            color: #f39c12;
+        }
+
+        .breadcrumb {
+            margin: 20px;
+            font-size: 14px;
+            color: #777;
+        }
+
+        main {
+            display: flex;
+            padding: 20px 30px;
+            gap: 20px;
+        }
+
+        .main-content {
+            flex-grow: 1;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .section-header h2 {
+            font-size: 22px;
+            margin-bottom: 20px;
+            color: #444;
+        }
+
+        /* Lab Experiments Section */
+        .lab-section {
+            margin: 30px 0;
+        }
+
+        .lab-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #e91e63;
+        }
+
+        .lab-resource-list {
+            margin-top: 20px;
+        }
+
+        .lab-item {
+            display: flex;
+            align-items: center;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .lab-item:hover {
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .lab-item-icon {
+            background-color: #e91e63;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin-right: 20px;
+            font-size: 24px;
+        }
+
+        .lab-item-info {
+            flex-grow: 1;
+        }
+
+        .lab-item-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .lab-item-type {
+            font-size: 12px;
+            color: #999;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 280px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 0;
+            height: 100vh;
+        }
+
+        .sidebar h3 {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .sidebar ul {
+            list-style: none;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 15px;
+        }
+
+        .sidebar ul a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        .sidebar ul a:hover {
+            color: #e91e63;
+        }
+
+        .sidebar ul ul {
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+
+        .sidebar ul ul a {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .sidebar ul ul a:hover {
+            color: #e91e63;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Dashboard</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <img src="download.png" alt="download Logo">
+        </div>
+        <div class="user-info">
+            <span>CHATAKONDA VENKATA SAI KUSHAL 2200031917</span>
+        </div>
+    </header>
+
+    <nav class="navigation">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="mycousrses.html">My Courses</a></li>
+            <li><a href="#">Help</a></li>
+        </ul>
+    </nav>
+
+    <div class="breadcrumb">
+        <p>Dashboard > My courses > JAVA-22SDC303A 2024-2025 ODD SEMESTER</p>
+    </div>
+
+    <main>
+        <section class="main-content">
+            <div class="section-header">
+                <h2>General</h2>
+            </div>
+
+            <!-- Lab Experiments Submission Section -->
+            <div class="lab-section">
+                <div class="lab-header">
+                    <span>▼</span>
+                    <span>Lab Experiments Submission</span>
+                </div>
+                <div class="lab-resource-list">
+                    <!-- Lab Experiment 01 -->
+                    <div class="lab-item">
+                        <div class="lab-item-icon"><img src="upload.jpeg" alt="upload Logo"></div>
+                        <div class="lab-item-info">
+                            <p class="lab-item-type">ASSIGNMENT</p>
+                            <p class="lab-item-title"><a href="submission.html" style="text-decoration: none; color: inherit;">LAB EXPERIMENT - 01</a></p>
+                        </div>
+                    </div>
+                    <!-- Lab Experiment 02 -->
+                    <div class="lab-item">
+                        <div class="lab-item-icon"><img src="upload.jpeg" alt="upload Logo"></div>
+                        <div class="lab-item-info">
+                            <p class="lab-item-type">ASSIGNMENT</p>
+                            <p class="lab-item-title">LAB EXPERIMENT - 02</p>
+                        </div>
+                    </div>
+                    <!-- Lab Experiment 03 -->
+                    <div class="lab-item">
+                        <div class="lab-item-icon"><img src="upload.jpeg" alt="upload Logo"></div>
+                        <div class="lab-item-info">
+                            <p class="lab-item-type">ASSIGNMENT</p>
+                            <p class="lab-item-title">LAB EXPERIMENT - 03</p>
+                        </div>
+                    </div>
+                    <!-- Lab Experiment 04 -->
+                    <div class="lab-item">
+                        <div class="lab-item-icon"><img src="upload.jpeg" alt="upload Logo"></div>
+                        <div class="lab-item-info">
+                            <p class="lab-item-type">ASSIGNMENT</p>
+                            <p class="lab-item-title">LAB EXPERIMENT - 04</p>
+                        </div>
+                    </div>
+                    <!-- Lab Experiment 05 -->
+                    <div class="lab-item">
+                        <div class="lab-item-icon"><img src="upload.jpeg" alt="upload Logo"></div>
+                        <div class="lab-item-info">
+                            <p class="lab-item-type">ASSIGNMENT</p>
+                            <p class="lab-item-title">LAB EXPERIMENT - 05</p>
+                        </div>
+                    </div>
+                    <!-- Lab Experiment 06 -->
+                    <div class="lab-item">
+                        <div class="lab-item-icon"><img src="upload.jpeg" alt="upload Logo"></div>
+                        <div class="lab-item-info">
+                            <p class="lab-item-type">ASSIGNMENT</p>
+                            <p class="lab-item-title">LAB EXPERIMENT - 06</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <aside class="sidebar">
+            <h3>Navigation</h3>
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Site home</a></li>
+                <li><a href="#">My courses</a>
+                    <ul>
+                        <li><a href="#">COHORTE16SDP</a></li>
+                        <li><a href="#">CSEH-CC</a></li>
+                        <li><a href="#">JAVA-22SDC303A 2024-2025 ODD SEMESTER</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </aside>
+    </main>
+
+</body>
+</html>
